@@ -5,7 +5,7 @@ public class Denuncia {
     private String descricaoFatos;
     private String status; // "Recebida","EM_Analise","Arquivada","Deferida"
 
-    public Denuncia(String protocolo, String descricaoFatos, String status) {
+    public Denuncia(String protocolo, String descricaoFatos) {
         if(descricaoFatos==null || descricaoFatos.trim().isEmpty()){
             throw new IllegalArgumentException("descricaoFatos nao pode estar em branco");
         }
